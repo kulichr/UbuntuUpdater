@@ -4,7 +4,7 @@
 
 sudo apt update && apt list --upgradable
 echo " "
-echo -e "\e[92mDo you want to upgrade these apps?\e[39m"
+echo -e "\e[92mDo you want to upgrade these packages?\e[39m"
 read upgrade
 if [[ $upgrade =~ "y" ]]; then
    sudo apt upgrade

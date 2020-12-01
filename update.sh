@@ -7,7 +7,7 @@ echo ""
 echo -e "\e[92mThese packages are upgradable:\e[39m"
 apt list --upgradable
 echo ""
-echo -e "\e[92mDo you want to upgrade these packages?\e[39m"
+echo -e "\e[92mDo you want to upgrade these packages? (y/n)\e[39m"
 read upgrade
 if [[ $upgrade =~ "y" ]]; then
    sudo apt upgrade
